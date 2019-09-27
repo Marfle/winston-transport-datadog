@@ -104,6 +104,7 @@ describe('winston-transport-datadog', () => {
     expect(transport.queue.paused).toBe(false);
     await transport.queue.drain();
     expect(transport.queue.length()).toBe(0);
+    expect(socket.write).toHaveBeenCalledTimes(3);
   });
 
   it('reconnects after reconnectInterval if queue has messages', () => {
