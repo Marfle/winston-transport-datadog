@@ -25,7 +25,10 @@
     "url": "https://github.com/Marfle/winston-transport-datadog/issues"
   },
   "homepage": "https://github.com/Marfle/winston-transport-datadog#readme",
-  "files": [],
+  "files": [
+    "index.js",
+    "datadog-transport.js"
+  ],
   "engines": {
     "node": ">=10"
   },
