@@ -9,7 +9,7 @@
     "lint": "eslint .",
     "test": "npm run lint && npm run jest",
     "preversion": "npm test",
-    "postversion": "git push && git push --tags",
+    "postversion": "git push && git push --tags"
   },
   "repository": {
     "type": "git",
