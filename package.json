@@ -8,7 +8,8 @@
     "jest": "jest",
     "lint": "eslint .",
     "test": "npm run lint && npm run jest",
-    "prepublishOnly": "npm run test"
+    "preversion": "npm test",
+    "postversion": "git push && git push --tags",
   },
   "repository": {
     "type": "git",
