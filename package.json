@@ -1,0 +1,44 @@
+{
+  "name": "@marfle/winston-transport-datadog",
+  "version": "0.1.0",
+  "description": "Datadog logging transport for winston",
+  "main": "index.js",
+  "scripts": {
+    "clean": "rm -Rf dist/",
+    "jest": "jest",
+    "lint": "eslint .",
+    "test": "npm run lint && npm run jest",
+    "prepublishOnly": "npm run test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Marfle/winston-transport-datadog.git"
+  },
+  "keywords": [
+    "winston",
+    "transport",
+    "datadog"
+  ],
+  "author": "Marfle",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Marfle/winston-transport-datadog/issues"
+  },
+  "homepage": "https://github.com/Marfle/winston-transport-datadog#readme",
+  "files": [],
+  "engines": {
+    "node": ">=10"
+  },
+  "peerDependencies": {
+    "winston": "^3"
+  },
+  "devDependencies": {
+    "eslint": "^6.4.0",
+    "jest": "^24.9.0",
+    "winston": "^3.2.1"
+  },
+  "dependencies": {
+    "async": "^3.1.0",
+    "fast-safe-stringify": "^2.0.7"
+  }
+}
