@@ -20,7 +20,7 @@ describe('winston-transport-datadog', () => {
     transport = new DatadogTransport({
       host: 'testhost',
       port: 1234,
-      reconnectInterval: 0,
+      reconnectInterval: 0
     });
   });
 
@@ -30,11 +30,11 @@ describe('winston-transport-datadog', () => {
       metadata: {
         environment: 'production',
         hostname: 'production.foo.bar',
-        service: 'testService',
+        service: 'testService'
       },
       socketOptions: {
-        rejectUnauthorized: false,
-      },
+        rejectUnauthorized: false
+      }
     });
     expect(transport.config).toBeDefined();
     expect(transport.config).toEqual({
@@ -46,12 +46,12 @@ describe('winston-transport-datadog', () => {
         ddsource: 'winston',
         environment: 'production',
         hostname: 'production.foo.bar',
-        service: 'testService',
+        service: 'testService'
       },
       socketOptions: {
         timeout: 10000,
-        rejectUnauthorized: false,
-      },
+        rejectUnauthorized: false
+      }
     });
   });
 
@@ -124,11 +124,11 @@ describe('winston-transport-datadog', () => {
     jest.advanceTimersByTime(1);
     expect(tls.connect).toHaveBeenCalledTimes(1);
   });
-  
+
   it('integrates with winston', async () => {
     const transports = [transport];
     const logger = createLogger({
-      transports,
+      transports
     });
     transport.queue.push = jest.fn();
     logger.error('testmessage');
@@ -136,7 +136,7 @@ describe('winston-transport-datadog', () => {
     expect(transport.queue.push).toHaveBeenCalledWith(
       expect.objectContaining({
         level: 'error',
-        message: 'testmessage',
+        message: 'testmessage'
       })
     );
   });

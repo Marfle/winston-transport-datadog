@@ -1,4 +1,4 @@
-const DatadogTransport = require("./datadog-transport");
+const DatadogTransport = require('./datadog-transport');
 
 module.exports = {
   DatadogTransport

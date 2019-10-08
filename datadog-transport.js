@@ -7,15 +7,15 @@ const defaultConfig = {
   host: 'intake.logs.datadoghq.com',
   port: 10516,
   bufferSize: 10000,
-  reconnectInterval: 10000, // used when transport is idle and there are messages in buffer
+  reconnectInterval: 10000 // used when transport is idle and there are messages in buffer
 };
 
 const defaultSocketOptions = {
-  timeout: 10000,
+  timeout: 10000
 };
 
 const defaultMetadata = {
-  ddsource: 'winston',
+  ddsource: 'winston'
 };
 
 module.exports = class DatadogTransport extends Transport {
@@ -25,7 +25,7 @@ module.exports = class DatadogTransport extends Transport {
       ...defaultConfig,
       socketOptions: { ...defaultSocketOptions, ...socketOptions },
       metadata: { ...defaultMetadata, ...metadata },
-      ...restOpts,
+      ...restOpts
     };
     super(config);
     this.config = config;

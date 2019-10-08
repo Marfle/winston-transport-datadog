@@ -27,10 +27,10 @@ logger = createLogger({
       // optional metadata which will be merged with log message
       metadata: {
         environment: process.env.NODE_ENV,
-        service: 'myService',
-      },
-    }),
-  ],
+        service: 'myService'
+      }
+    })
+  ]
 });
 ```
 
