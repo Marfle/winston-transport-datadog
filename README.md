@@ -1,6 +1,6 @@
 # winston-transport-datadog
 
-[![npm (scoped)](https://img.shields.io/npm/v/@marfle/winston-transport-datadog.svg)](https://www.npmjs.com/package/@marfle/winston-transport-datadog)
+[![npm (scoped)](https://img.shields.io/npm/v/@marfle/winston-transport-datadog.svg)](https://www.npmjs.com/package/@marfle/winston-transport-datadog) ![node (scoped)](https://img.shields.io/node/v/@marfle/winston-transport-datadog)
 
 [`winston`](https://github.com/winstonjs/winston) transport for Datadog logging.
 
