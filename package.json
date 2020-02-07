@@ -1,6 +1,6 @@
 {
   "name": "@marfle/winston-transport-datadog",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Datadog logging transport for winston",
   "main": "index.js",
   "scripts": {
