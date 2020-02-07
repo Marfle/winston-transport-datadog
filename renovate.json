@@ -1,0 +1,17 @@
+{
+  "extends": [
+    "config:base",
+    ":preserveSemverRanges",
+    ":disablePeerDependencies"
+  ],
+  "lockFileMaintenance": { "enabled": true },
+  "rangeStrategy": "bump",
+  "semanticCommitType": "chore",
+  "packageRules": [
+    {
+      "updateTypes": ["minor", "patch", "lockFileMaintenance"],
+      "depTypeList": ["devDependencies", "dependencies"],
+      "automerge": true
+    }
+  ]
+}
