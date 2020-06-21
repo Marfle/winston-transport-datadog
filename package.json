@@ -39,7 +39,7 @@
   "devDependencies": {
     "eslint": "^7.3.0",
     "jest": "^26.0.1",
-    "winston": "^3.2.1"
+    "winston": "^3.3.0"
   },
   "dependencies": {
     "async": "^3.2.0",
